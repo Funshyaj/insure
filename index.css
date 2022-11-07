@@ -116,7 +116,10 @@ background-color: #2c2640;}
         text-transform: uppercase;
         transition: .5s;}
 
-footer{position: relative;}
+footer{position: relative;
+overflow: hidden;
+padding: 20px 40px;
+background-color: #f0f0f0a6;}
 
 footer > img{position: absolute;
 top: 0;
