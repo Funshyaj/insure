@@ -67,17 +67,18 @@ color: #2c2640;}
 .about > h1{font-size: 8vw;
 padding: 10px 0px 40px;}
 
-.box-flex > .box{border: 1px solid gray;
-    border-radius: 10px;
+.box-flex > .box{
     display: flex;
     gap: 10px;
     flex-direction: column;
-padding: 20px;}
+padding: 20px 5px;}
 
 .box-flex > .box > .box-text{
 display: flex;
 flex-direction: column;
-gap: 20px;
+gap: 10px;
 }
 
 .box-flex > .box > .box-text >h4{ font-size: 6vw;}
+
+.box-flex > .box > .box-text >p{color:#2c26407c; line-height: 1.5;}
