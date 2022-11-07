@@ -19,12 +19,12 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 
 .mobile-hero > .hero-info {height: 90%;}
 
-.mobile-hero > .hero-info > .hero-info-poster-img{height: 55%;}
+.mobile-hero > .hero-info > .hero-info-poster-img{height: 50%;}
 
 .mobile-hero > .hero-info > .hero-info-poster-img  > img{width: 100%;height: 100%;;}
 
 .hero-info-content{position: relative;
-    height: 45%;
+    height: 50%;
     background-color: #2c2640;
     color: white;
     padding: 5px 10px;
@@ -82,3 +82,42 @@ gap: 10px;
 .box-flex > .box > .box-text >h4{ font-size: 6vw;}
 
 .box-flex > .box > .box-text >p{color:#2c26407c; line-height: 1.5;}
+
+.find-out-more{width: 100%;
+    position: relative;
+    margin: 50px 0px;
+    height: 350px;
+    display: flex;
+    overflow: hidden;
+background-color: #2c2640;}
+
+.find-out-more > img{position: absolute;
+    top: 0;
+    right: 0;}
+
+.find-out-more > div{flex-wrap: wrap;
+    display: flex;
+    height: auto;
+    text-align: center;
+    color: white;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;}
+
+    .find-out-more > div > .work-text > h1{font-size: 12vw;
+    font-family:'Times New Roman', Times, serif;}
+
+    .find-out-more > div > button{ border: 2px solid white;
+        color: inherit;
+        background-color: transparent;
+        padding: 10px 30px;
+        font-size: 4vw;
+        margin-top: 15px;
+        text-transform: uppercase;
+        transition: .5s;}
+
+footer{position: relative;}
+
+footer > img{position: absolute;
+top: 0;
+left: 0;}
