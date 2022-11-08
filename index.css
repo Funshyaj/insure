@@ -42,6 +42,15 @@ bottom: -185px;
 right: 0;}
 
 
+.hero-info-content > .hero-info-texts{
+    animation: fadein ;
+    animation-duration: 5s;}
+
+@keyframes fadein {
+from {opacity: 0;} 
+to{opacity: 1;}   
+}
+
 .hero-info-content > .hero-info-texts > h2{font-size:8vw; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
 
 .hero-info-content > .hero-info-texts > p{font-size:4vw; line-height: 1.5; }
@@ -93,9 +102,12 @@ background-color: #2c2640;}
 
 .find-out-more > img{position: absolute;
     top: 0;
-    right: 0;}
+    right: 0;
+z-index: 0  ;}
+
 
 .find-out-more > div{flex-wrap: wrap;
+    z-index: 1;
     display: flex;
     height: auto;
     text-align: center;
@@ -118,9 +130,27 @@ background-color: #2c2640;}
 
 footer{position: relative;
 overflow: hidden;
-padding: 20px 40px;
-background-color: #f0f0f0a6;}
+padding: 25px 30px;
+background-color: #f0f0f070;}
 
 footer > img{position: absolute;
 top: 0;
-left: 0;}
+left: 0;
+z-index: -1;}
+
+footer > hr{margin: 10px 0px 30px;}
+
+.footer-header{display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0px 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;}
+
+    .footer-header > .footer-header-icons{display: flex;
+        gap: 15px;}
+
+.footer-content{display: flex;}
+
+.footer-content-list > ul{list-style: none;}
