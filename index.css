@@ -51,7 +51,17 @@ from {opacity: 0;}
 to{opacity: 1;}   
 }
 
-.hero-info-content > .hero-info-texts > h2{font-size:8vw; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
+.hero-info-content > .hero-info-texts > h2{font-size:8vw; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation:drop-and-bounce ;
+    padding-bottom: 10px;
+    animation-duration: 2s;
+position: relative;}
+
+@keyframes drop-and-bounce {
+0% {top:-200px;} 
+40%{top:0;}   
+70%{top:-5px;}
+100%{top:0;}}
 
 .hero-info-content > .hero-info-texts > p{font-size:4vw; line-height: 1.5; }
 
@@ -61,7 +71,14 @@ color: inherit;
 padding: 10px 40px;
 font-size: 4vw;
 margin-top: 15px;
-transition: .5s;}
+transition: .5s;
+animation:join ;
+animation-duration: 1s;
+position: relative;}
+
+@keyframes join {
+0% {bottom:-100px;} 
+100%{bottom:0;}}
 
 .hero-info-content > .hero-info-texts > button:active{background-color: white;
 color: #2c2640;}
