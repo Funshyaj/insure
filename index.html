@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 <link rel="stylesheet" href="index.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Insure landing page</title>
 </head>
 <body>
@@ -92,13 +92,14 @@ and your loved ones are protected.</p>
   </div>
 </section>  
 
- 
+ <div class="body">
+
 
   <section class="about">
     <hr>
     <h1> We’re different</h1>
     <div class="box-flex">
-      <div class="box">
+      <div class="box" data-aos="fade-up">
         <div class="box-img"><img src="images/icon-snappy-process.svg" alt=""></div>
         <div class="box-text" >
           <h4>Snappy Process</h4>
@@ -108,7 +109,7 @@ and your loved ones are protected.</p>
   
       </div>
 
-      <div class="box">
+      <div class="box" data-aos="fade-up">
         <div class="box-img"><img src="images/icon-affordable-prices.svg" alt=""></div>
         <div class="box-text" >
           <h4>Affordable Prices</h4>
@@ -118,7 +119,7 @@ and your loved ones are protected.</p>
   
       </div>
 
-      <div class="box">
+      <div class="box" data-aos="fade-up">
         <div class="box-img"><img src="images/icon-people-first.svg" alt=""></div>
         <div class="box-text" >
           <h4>People First</h4>
@@ -206,5 +207,12 @@ and your loved ones are protected.</p>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Funsho ajayi</a>.
   </div>
+
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
 </body>
 </html>
