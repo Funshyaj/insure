@@ -5,7 +5,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 
 .pc-hero{display: none;}
 
-.mobile-hero{height: 90vh;}
+.mobile-hero{height: 92vh;}
 
 .mobile-hero > header{display: flex;
     justify-content: space-between;
@@ -167,6 +167,22 @@ footer > hr{margin: 10px 0px 30px;}
     .footer-header > .footer-header-icons{display: flex;
         gap: 15px;}
 
-.footer-content{display: flex;}
+.footer-content{    display: flex;
+    flex-direction: column;
+text-align: center;
+    align-items: center;}
 
-.footer-content-list > ul{list-style: none;}
+    .footer-content-list{padding: 20px 0;
+    text-transform: uppercase;}
+
+.footer-content-list > h4{color:#2c264070;
+padding: 10px 0 30px;}
+
+.footer-content-list > ul{list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+font-weight: bold;}
+
+.footer-content-list > ul >li{font-size: 12px;
+color:#252130};
