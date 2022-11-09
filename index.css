@@ -15,17 +15,67 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 
 .mobile-hero > header > img{object-fit: contain;}
 
-.mobile-hero > header > nav{position: fixed;
-top: 90px; 
-left:0;
-right: 0;
-width: 100%;
-height: 100%;
-z-index: 10;
-background-color: #252130;
-display: none;}
+#hamburger{
+transition: .5s;
+}
 
-.body{}
+
+
+.mobile-hero > header > nav{position: fixed;
+    top: 53px;
+    display: none;
+    padding-top: 31px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #252130;
+    align-items: flex-start;
+    justify-content: center;
+    transition: .4s;
+}
+
+.mobile-hero > header > nav > ul{
+    display: flex;
+    text-transform: uppercase;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    padding: 0 50px;
+    list-style: none;
+    align-items: center;
+    font-weight: bold;
+}
+
+.mobile-hero > header > nav > ul >li{
+    color: #fff;
+    font-size: 6vw;
+}
+
+
+.mobile-hero > header > nav > ul >button{
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    padding: 10px 30px;
+    font-size: 4vw;
+    margin-top: 15px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .5s;}
+
+  button:active{background-color: white;
+            color: #2c2640;}   
+
+
+
+.mobile-hero > header > nav > img{
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+}
+
 
 .mobile-hero > .hero-info {height: 90%;}
 
@@ -61,7 +111,8 @@ from {opacity: 0;}
 to{opacity: 1;}   
 }
 
-.hero-info-content > .hero-info-texts > h2{font-size:8vw; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.hero-info-content > .hero-info-texts > h2{font-size:10vw;   
+     font-family:'Times New Roman', Times, serif;
     animation:drop-and-bounce ;
     padding-bottom: 10px;
     animation-duration: 2s;
@@ -115,7 +166,8 @@ flex-direction: column;
 gap: 10px;
 }
 
-.box-flex > .box > .box-text >h4{ font-size: 6vw;}
+.box-flex > .box > .box-text >h4{ font-size: 6vw;
+    font-family:'Times New Roman', Times, serif;}
 
 .box-flex > .box > .box-text >p{color:#2c26407c; line-height: 1.5;}
 
