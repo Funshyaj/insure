@@ -213,6 +213,7 @@ margin-top: 40px;
 padding: 40px 5px;
 margin: 15px 10px;
 transition: 4.5s;
+border-radius: 5px;
 box-shadow: 2px 8px 15px -2px rgba(0, 0, 0, 0.082);}
 
 .box-flex > .box:hover{
@@ -243,16 +244,18 @@ z-index: 0  ;}
 
 
 .find-out-more > div{flex-wrap: wrap;
+    flex-wrap: wrap;
     z-index: 1;
     display: flex;
     height: auto;
     text-align: center;
+    width: 1000%;
     color: white;
     padding: 20px 7%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;}
 
-
+.work-text{width: 100%;}
 
     .find-out-more > div > button{ border: 2px solid white;
         color: inherit;
@@ -387,14 +390,14 @@ cursor: pointer;}
         max-width:40% ;
         right: 5%;
         bottom: -90px;
-        z-index: 2;
+        z-index: 1;
         
         }
 
      .pc-hero > .hero-content  > :nth-child(3){
            bottom: -200px;
             left: 0;
-            z-index: 1;
+            z-index: 2;
             } 
 
       .pc-hero > .hero-content  > :nth-child(4){
@@ -408,10 +411,38 @@ cursor: pointer;}
         gap: 20px;
         flex-direction: column;
         z-index: 5;
+        animation: fadein ;
+        animation-duration: 3s;}
+    
+    @keyframes fadein {
+    from {opacity: 0;} 
+    to{opacity: 1;}   
     }
-.pc-hero > .hero-content > .hero-texts > hr{width:30%}
+.pc-hero > .hero-content > .hero-texts > hr{
+    width:30%;
+    animation:slide-in ;
+animation-duration: 1s;
+position: relative;}
+
+@keyframes slide-in {
+0% {left:-200px;} 
+100%{left:0;}}
+
 
 .pc-hero > .hero-content > .hero-texts {color: white;}
+
+
+.pc-hero > .hero-content > .hero-texts >h1{
+animation:drop-and-bounce ;
+padding-bottom: 10px;
+animation-duration: 2s;
+position: relative;}
+
+@keyframes drop-and-bounce {
+0% {top:-200px;} 
+40%{top:0;}   
+70%{top:-5px;}
+100%{top:0;}}
 
     .pc-hero > .hero-content > .hero-texts > div > button{
         border: 2px solid white;
@@ -422,7 +453,13 @@ cursor: pointer;}
         text-transform: uppercase;
         font-weight: bold;
         transition: .5s; 
-        }
+        animation:join ;
+        animation-duration: 1s;
+        position: relative;}
+        
+        @keyframes join {
+        0% {bottom:-200px;} 
+        100%{bottom:0;}}
 
     .pc-hero .hero-content > .hero-texts > div > button:hover{
            color: #2c2640;
@@ -448,16 +485,19 @@ cursor: pointer;}
 flex-direction: row;
 }
 
-.box-flex > .box {padding: 20px 5px 40px;}
+.box-flex > .box {padding: 20px 5px 40px;
+    width: 100%;}
 
-.box-img{display: flex;}
+.box-img{display: block;}
 
-.box-text{text-align: left;}
+.box-text{text-align: center;}
 
 .box-text >p{font-size: 1rem;}
 
 .find-out-more > div {
     padding: 20px 40px;}
+
+    .work-text{width: 80%;}
 
 
 .find-out-more > div > button{
@@ -495,7 +535,28 @@ footer{padding: 25px 40px;}
 .pc-hero > .hero-content  > :nth-child(2){
     max-width:35% ;
     right: 12%;
-    bottom: -100px;
+    bottom: -150px;
+    z-index: 2;
     }
 
+    .pc-hero > .hero-content  > :nth-child(4){
+        position: absolute;
+              top: 0px;
+                right: 0;
+                z-index: 2  ;
+                }
+    .box-img{display: flex;}
+
+    .box-text{text-align: left;}
+
+    .work-text{width: 50%;}
+}
+
+@media screen and (min-width:1400px){
+    .pc-hero > .hero-content  > :nth-child(2){
+        max-width:30% ;
+        right: 12%;
+        bottom: -200px;
+        z-index: 1;
+        }  
 }
