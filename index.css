@@ -203,14 +203,21 @@ padding: 10px 0px 40px;}
 .box-flex {
 display: flex;
 flex-direction: column;
+margin-top: 40px;
 }
 
 .box-flex > .box{
     display: flex;
     gap: 10px;
     flex-direction: column;
-padding: 40px 5px;}
+padding: 40px 5px;
+margin: 15px 10px;
+transition: 4.5s;
+box-shadow: 2px 8px 15px -2px rgba(0, 0, 0, 0.082);}
 
+.box-flex > .box:hover{
+    box-shadow: 2px 8px 15px -2px rgba(0, 0, 0, 0.18)
+}
 .box-flex > .box > .box-text{
 display: flex;
 flex-direction: column;
@@ -329,18 +336,26 @@ color:#252130}
         .pc-hero > header{display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 30px;
             padding: 20px 30px;}
 
-            .pc-hero > header > nav > ul{display: flex;
-                align-items: center;
+            .pc-hero > header > nav > ul{
+                display: flex;
                 list-style: none;
-                gap: 40px;}
+                gap: 30px;
+       
+                align-items: center;}
 
                 .pc-hero > header > nav > ul >li{
-                    font-size: 1.03rem;
-                     text-transform: uppercase;
-                     color: #2c264070;
-                     font-weight: bold;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    color: #2c264070;
+                    font-weight: bold;
+                    transition: .5s;
+                    cursor: pointer;
+                }
+                .pc-hero > header > nav > ul >li:hover{
+                    color: #2c2640;      
                 }
 
                 .pc-hero > header > nav > ul >button{
@@ -351,10 +366,12 @@ color:#252130}
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
-    transition: .5s;}
+    transition: .5s;
+cursor: pointer;}
 
-  button:active{background-color: white;
-            color: #2c2640;}
+    .pc-hero > header > nav > ul >button:hover{
+        background-color: #2c2640;
+            color:white; }
 
     .pc-hero > .hero-content{min-height: 550px;
         width: 100%;
@@ -367,9 +384,10 @@ color:#252130}
     }
     .pc-hero > .hero-content  > img{position: absolute;}
     .pc-hero > .hero-content  > :nth-child(2){
-        max-width:35% ;
-        right: 12%;
-        bottom: -100px;
+        max-width:40% ;
+        right: 5%;
+        bottom: -90px;
+        z-index: 2;
         
         }
 
@@ -405,6 +423,10 @@ color:#252130}
         font-weight: bold;
         transition: .5s; 
         }
+
+    .pc-hero .hero-content > .hero-texts > div > button:hover{
+           color: #2c2640;
+                background-color:white; }
 .body{
     padding: 50px 40px;
 }
@@ -426,7 +448,7 @@ color:#252130}
 flex-direction: row;
 }
 
-.box-flex > .box {padding: 70px 5px 40px;}
+.box-flex > .box {padding: 20px 5px 40px;}
 
 .box-img{display: flex;}
 
@@ -466,4 +488,14 @@ footer{padding: 25px 40px;}
         justify-content: flex-start;
         gap: 15%;
     }
+}
+
+/* pc and above */
+@media screen and (min-width:990px){
+.pc-hero > .hero-content  > :nth-child(2){
+    max-width:35% ;
+    right: 12%;
+    bottom: -100px;
+    }
+
 }
