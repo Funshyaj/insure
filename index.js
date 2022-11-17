@@ -3,6 +3,7 @@ let body = document.querySelector('.body')
 let hero = document.querySelector('.hero-info')
 let menu = document.querySelector('.nav')
 
+//nav menu toggle
 menuBtn.addEventListener("click", 
 ()=> {
     if (menuBtn.id == "hamburger"){
@@ -12,6 +13,7 @@ menuBtn.addEventListener("click",
             hero.style.display = "none"
             menu.style.display = "flex"
             menu.style.height = '100%'
+           
     }
 
    else if (menuBtn.id == 'close'){
@@ -19,8 +21,7 @@ menuBtn.addEventListener("click",
         menuBtn.id = "hamburger"
         body.style.display = "block"
         hero.style.display = "block"
-            menu.style.display = "none"
-            menu.style.height = '0'
+             menu.style.display = "none"
     }
 
 
