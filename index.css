@@ -5,7 +5,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 
 
 /* base styles */
-h1{font-size: 2.7rem;
+h1{font-size: 2.5rem;
     font-family:'Times New Roman', Times, serif;}
 
 h2{font-size: 2.1rem;
@@ -31,7 +31,7 @@ display: block;}
 
 /* smaller phones */
     @media screen and (max-width:340px){
-        h1{font-size: 2.4rem;
+        h1{font-size: 2.2rem;
             font-family:'Times New Roman', Times, serif;}
 
             h2{font-size: 1.8rem;
@@ -159,7 +159,7 @@ from {opacity: 0;}
 to{opacity: 1;}   
 }
 
-.hero-info-content > .hero-info-texts > h2{  
+.hero-info-content > .hero-info-texts > h1{  
     animation:drop-and-bounce ;
     padding-bottom: 10px;
     animation-duration: 2s;
@@ -427,7 +427,7 @@ cursor: pointer;}
     .pc-hero .hero-content > .hero-texts > div > button:hover{
            color: #2c2640;
                 background-color:white; }
-.body{
+.about-body{
     padding: 50px 40px;
 }
 
