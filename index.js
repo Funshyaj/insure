@@ -1,5 +1,6 @@
 let menuBtn = document.querySelector('#hamburger')
 let body = document.querySelector('.body')
+let hero = document.querySelector('.hero-info')
 let menu = document.querySelector('.nav')
 
 menuBtn.addEventListener("click", 
@@ -8,6 +9,7 @@ menuBtn.addEventListener("click",
             menuBtn.src ='images/icon-close.svg'
             menuBtn.id = "close"
             body.style.display = "none"
+            hero.style.display = "none"
             menu.style.display = "flex"
             menu.style.height = '100%'
     }
@@ -16,6 +18,7 @@ menuBtn.addEventListener("click",
         menuBtn.src='images/icon-hamburger.svg'
         menuBtn.id = "hamburger"
         body.style.display = "block"
+        hero.style.display = "block"
             menu.style.display = "none"
             menu.style.height = '0'
     }
